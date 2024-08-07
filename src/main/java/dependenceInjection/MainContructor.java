@@ -1,11 +1,11 @@
-package xmlConfig;
+package dependenceInjection;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pojobeans.AccountService;
 
-public class Main {
+public class MainContructor {
     public  static  void main(String []  args){
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("xmlConfig/bean.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("dependenceInjection/beans-contructor.xml");
         AccountService accountService = applicationContext.getBean("accountService",AccountService.class);
 
         System.out.println("Before money tranfer");

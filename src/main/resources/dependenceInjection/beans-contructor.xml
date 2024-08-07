@@ -6,8 +6,8 @@
 
     <bean id="accountRepository" class="pojobeans.AccountRepositoryImpl"/>
 
-    <bean id="accountService" class="pojobeans.AccountServiceImpl">
-        <property name="accountRepository" ref="accountRepository"/>
+    <bean id="accountService" class="dependenceInjection.AccountContructor">
+        <constructor-arg name="accountRepository" ref="accountRepository" />
 
     </bean>
 

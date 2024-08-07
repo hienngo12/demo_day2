@@ -9,6 +9,6 @@
 
     <context:annotation-config/>
 
-    <context:component-scan base-package="annotationConfig"/>
+    <context:component-scan base-package="beanlifecycle"/>
 
 </beans>

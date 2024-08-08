@@ -9,5 +9,6 @@ public class MainXml {
 
         LifecycleXml lifecycleXml = new LifecycleXml();
         lifecycleXml.destroy();
+
     }
 }
